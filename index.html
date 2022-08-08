@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!--Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,100&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Weather Tracker</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+  <!-- Bulma Version 0.9.0-->
+  <link rel="stylesheet" href="https://unpkg.com/bulmaswatch/flatly/bulmaswatch.min.css" id="bulma-css" />
+
+</head>
+
+<body>
+  <div class="column is-9">
+    <figure onclick=myFunction() class="icon is-large is-rounded" id="icon"><img
+        src="https://t3.ftcdn.net/jpg/01/65/47/92/360_F_165479250_xhiSVoJOhKS9BbptDqqVv39YotMi3hGq.jpg"></figure>
+    <section class="hero is-info welcome is-small" id="clouds">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title" style="color:#333">
+            Hello, Welcome to Weather Tracker
+          </h1>
+        </div>
+      </div>
+    </section>
+
+    <div class="column is-6">
+      <div class="card">
+
+        <div class="card-content">
+          <div class="content">
+            <div class="control has-icons-left has-icons-right field">
+              <form id="form">
+                <input class="input is-small" type="text" id="input" placeholder="Enter City, State , or Zip Code">
+                <button type="submit" id="submitButton">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="display"></div>
+  <section class="info-tiles">
+    <div class="tile is-ancestor has-text-centered">
+      <div class="tile is-parent">
+        <article class="tile is-child box">
+          <p class="title" id="first"></p>
+          <p class="subtitle">Temperature in F°</p>
+
+        </article>
+      </div>
+      <div class="tile is-parent">
+        <article class="tile is-child box">
+
+          <p class="title" id="second"></p>
+          <p class="subtitle">Temperature in C°</p>
+
+        </article>
+      </div>
+    </div>
+  </section>
+  
+      <div id="revert"> <!-- HTML !-->
+<button id ="goBack" class="button-82-pushable" role="button">
+  <span class="button-82-shadow"></span>
+  <span class="button-82-edge"></span>
+  <span class="button-82-front text">
+    Revert
+  </span>
+</button></div> 
+  <div class="columns">
+    <div class="column is-6">
+      <div class="card events-card">
+        <header class="card-header">
+          <p class="card-header-title">
+            Forecast
+          </p>
+          <a href="#" class="card-header-icon" aria-label="more options">
+            <span class="icon" id="forecastDrop">
+              <i onclick=forecastDropdown() class="fa fa-angle-down" aria-hidden="true"></i>
+            </span>
+          </a>
+        </header>
+        <div class="card-table hidden" id="forecast">
+          <div class="content">
+            <table class="table is-fullwidth is-striped">
+              <tbody>
+              
+                <tr>
+                  <td width="5%"><i class="fa fa-cloud"></i></td>
+                  <td class="days" id="date1">Date</td>
+                  <td  id="button1" class="level-right"><a class="button is-small is-primary" href="#">Click</a></td>
+                </tr>
+                <tr>
+                  <td width="5%"><i class="fa fa-cloud">
+                  <td class="days" id="date2">Date</td>
+                  <td id = "button2" class="level-right" id="third"><a class="button is-small is-primary" href="#">Click</a></td>
+                </tr>
+                <tr>
+                  <td width="5%"><i class="fa fa-cloud"></i></td>
+                  <td class="days" id="date3"> Date</td>
+                  <td id="button3" class="level-right"  id="fourth"><a class="button is-small is-primary" href="#">Click</a></td>
+                </tr>
+                <tr>
+                  <td width="5%"><i class="fa fa-cloud"></i></td>
+                  <td class="days" id="date4">Date</td>
+                  <td id="button4" class="level-right"  id="fifth"><a class="button is-small is-primary" href="#">Click</a></td>
+                </tr>
+                 <tr class="hidden">
+                  <td width="5%"><i class="fa fa-cloud"></i></td>
+                  <td class="days" id="date5">Date</td>
+                  <td id = "button5" class="level-right"  id="sixth"><a class="button is-small is-primary" href="#">Click</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+  </div>
+  </div>
+  </div>
+  <script async type="text/javascript" src="script.js"></script>
+  <div id="image"><img /></div>
+</body>
+
+</html>
+               
